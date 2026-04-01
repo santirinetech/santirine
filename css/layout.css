@@ -1,0 +1,208 @@
+/* Containers e Layout Central */
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+section {
+    position: relative;
+    padding: var(--space-xxl) 0;
+}
+
+/* ===============
+   Header Navegação
+=================*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: transparent;
+    transition: background var(--transition-smooth), backdrop-filter var(--transition-smooth);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.header.scrolled {
+    background: rgba(7, 9, 19, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-mark {
+    width: 32px;
+    height: 32px;
+    background: var(--logo-gradient);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: var(--glow-cyan);
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: var(--primary-cyan);
+    font-weight: 400;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    transition: color var(--transition-fast);
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--text-main);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-main);
+    font-size: 2rem;
+    cursor: none;
+}
+
+/* ===============
+   Layout Seções
+=================*/
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.section-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.section-description {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+}
+
+/* Diferencial / About Formato */
+.about {
+    background: var(--bg-darker);
+    border-top: 1px solid var(--border-glass);
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.about-content {
+    max-width: 900px;
+}
+
+.about-content .reveal-text {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    color: var(--text-muted);
+}
+
+.about-stats {
+    display: flex;
+    gap: var(--space-xl);
+    flex-wrap: wrap;
+    border-top: 1px solid var(--border-glass);
+    padding-top: var(--space-lg);
+}
+
+/* Form Section */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+/* Footer Grid */
+.footer {
+    border-top: 1px solid var(--border-glass);
+    padding: var(--space-lg) 0;
+    text-align: center;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.footer-bottom p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    transition: color var(--transition-fast);
+}
+
+.social-links a:hover {
+    color: var(--primary-cyan);
+}
+
+/* Responsive Limits */
+@media (max-width: 992px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-list { display: none; } /* Precisaria de JS pra menu mobile, mantendo simples por agora ou adicionaremos na V2 */
+    .mobile-menu-btn { display: block; }
+    :root {
+        --space-xxl: 6rem;
+    }
+}

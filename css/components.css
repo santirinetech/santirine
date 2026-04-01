@@ -1,0 +1,228 @@
+/* ====================
+   Componentes Reutilizáveis
+======================*/
+
+/* Botões */
+button {
+    font-family: var(--font-body);
+}
+
+.btn-primary, .btn-secondary, .btn-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    cursor: none;
+}
+
+.btn-primary {
+    background: var(--logo-gradient);
+    color: #fff;
+    box-shadow: var(--glow-cyan);
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-blue) 50%, var(--primary-cyan) 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-smooth);
+}
+
+.btn-primary:hover::before {
+    opacity: 1;
+}
+
+.btn-primary span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+    border: 1px solid var(--border-glass);
+    backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-header {
+    background: transparent;
+    border: 1px solid var(--primary-cyan);
+    color: var(--primary-cyan);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    box-shadow: none;
+}
+.btn-header:hover {
+    background: var(--primary-cyan);
+    color: var(--bg-dark);
+    box-shadow: var(--glow-cyan);
+}
+
+/* Service Card (Glassmorphism + Neon Border) */
+.service-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-glass);
+    border-radius: 16px;
+    padding: var(--space-xl) var(--space-md);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(16px);
+    transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    cursor: none;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--card-gradient);
+    opacity: 0;
+    transition: opacity var(--transition-smooth);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.service-card:hover {
+    border-color: var(--primary-cyan);
+    /* Transform handled by JS for 3D tilt */
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.card-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 240, 255, 0.12) 0%, rgba(0,240,255,0) 70%);
+    border-radius: 50%;
+    top: -150px; left: -150px;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+.service-card:hover .card-glow {
+    opacity: 1;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--primary-cyan);
+    margin-bottom: var(--space-sm);
+    filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.5));
+    position: relative;
+    z-index: 1;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.service-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* About Stats Items */
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--logo-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Forms Customizados Minimalistas */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    background: var(--bg-surface);
+    padding: var(--space-lg);
+    border-radius: 16px;
+    border: 1px solid var(--border-glass);
+    backdrop-filter: blur(12px);
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--border-glass);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    padding: 10px 0;
+    outline: none;
+    transition: border-color var(--transition-fast);
+    cursor: none;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    pointer-events: none;
+    transition: all var(--transition-fast);
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border-bottom-color: var(--primary-cyan);
+}
+
+.input-group input:focus ~ label,
+.input-group textarea:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label,
+.input-group textarea:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 0.85rem;
+    color: var(--primary-cyan);
+}

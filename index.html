@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santirine Tech | Inovação Digital</title>
+    <meta name="description" content="Santirine Tech: Construindo o futuro com tecnologia de ponta, design inovador e soluções sob medida.">
+    <!-- Google Fonts: Outfit para Títulos (Tech/Futurista), Inter para Leitura -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Modulares -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- Cursor Customizado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navegação -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-mark">S</div>
+                <div class="logo-text">SANTIRINE <span>TECH</span></div>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Início</a></li>
+                    <li><a href="#services" class="nav-link">Soluções</a></li>
+                    <li><a href="#about" class="nav-link">Diferencial</a></li>
+                    <li><a href="#contact" class="nav-link btn-header">Fale Conosco</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Abrir Menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg">
+                <div class="gradient-sphere sphere-1"></div>
+                <div class="gradient-sphere sphere-2"></div>
+                <div class="noise-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="badge fade-up">Bem-vindo ao futuro digital</div>
+                <h1 class="hero-title fade-up" style="--delay: 0.1s">
+                    Inovação sem <span class="text-gradient">limites.</span><br>
+                    Engenharia de precisão.
+                </h1>
+                <p class="hero-subtitle fade-up" style="--delay: 0.2s">
+                    Não usamos templates. Nós forjamos experiências digitais únicas que colocam sua marca à frente do tempo, combinando estética extrema e performance absoluta.
+                </p>
+                <div class="hero-actions fade-up" style="--delay: 0.3s">
+                    <a href="#services" class="btn-primary" data-text="Explorar Soluções">
+                        <span>Explorar Soluções</span>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        Iniciar Projeto <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Nossas <span class="text-gradient">Soluções</span></h2>
+                    <p class="section-description">Como a Santirine Tech pode impulsionar seu negócio hoje.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card fade-up">
+                        <div class="card-glow"></div>
+                        <div class="service-icon"><ion-icon name="code-slash-outline"></ion-icon></div>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Aplicações velozes, seguras e com design exclusivo. Esqueça o formato padrão e genérico da internet moderna.</p>
+                    </div>
+                    
+                    <div class="service-card fade-up" style="--delay: 0.1s">
+                        <div class="card-glow"></div>
+                        <div class="service-icon"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+                        <h3>Apps Mobile</h3>
+                        <p>Sistemas fluidos e interativos para colocar sua empresa diariamente no bolso de milhões de usuários.</p>
+                    </div>
+                    
+                    <div class="service-card fade-up" style="--delay: 0.2s">
+                        <div class="card-glow"></div>
+                        <div class="service-icon"><ion-icon name="hardware-chip-outline"></ion-icon></div>
+                        <h3>Mentes Artificiais</h3>
+                        <p>Automações inteligentes e integrações avançadas com Inteligência Artificial para otimizar processos em 10x.</p>
+                    </div>
+                    
+                    <div class="service-card fade-up" style="--delay: 0.3s">
+                        <div class="card-glow"></div>
+                        <div class="service-icon"><ion-icon name="color-palette-outline"></ion-icon></div>
+                        <h3>UI/UX Premium</h3>
+                        <p>Interfaces disruptivas que não apenas funcionam, mas geram o efeito "UAU" imediato no primeiro clique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Differential Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="reveal-text fade-up">
+                        A <span class="text-gradient">Santirine</span> não entrega apenas código. <br>Entregamos a assinatura digital do seu sucesso com alto nível técnico.
+                    </h2>
+                    <div class="about-stats mt-4">
+                        <div class="stat-item fade-up">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Código Customizado</span>
+                        </div>
+                        <div class="stat-item fade-up" style="--delay: 0.1s">
+                            <span class="stat-number">UI</span>
+                            <span class="stat-label">Design Interativo</span>
+                        </div>
+                        <div class="stat-item fade-up" style="--delay: 0.2s">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Inovação Contínua</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container contact-wrapper">
+                <div class="contact-info fade-up">
+                    <h2 class="section-title">Pronto para <br><span class="text-gradient">Inovar?</span></h2>
+                    <p>Mande uma mensagem e vamos transformar sua visão na mais alta realidade estrutural e visual da web.</p>
+                    <div class="contact-details mt-4">
+                        <a href="mailto:hello@santirinetech.com" class="contact-link">
+                            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+                            hello@santirinetech.com
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form fade-up" style="--delay: 0.2s">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Seu Nome / Empresa</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">E-mail Corporativo</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" required placeholder=" " rows="4"></textarea>
+                        <label for="message">Fale sobre seu projeto ambicioso...</label>
+                    </div>
+                    <button type="button" class="btn-primary w-100 btn-submit">
+                        <span>Lançar Projeto</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="logo-text small">SANTIRINE <span>TECH</span></div>
+                <p>&copy; 2026 Santirine Tech. Todos os direitos reservados. Feito para o amanhã.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

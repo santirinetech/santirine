@@ -1,0 +1,48 @@
+:root {
+    /* Cores Inspiradas na Logo Santirine Tech */
+    /* Dark Theme Base */
+    --bg-dark: #070913;       /* Preto/Azul extremamente profundo */
+    --bg-darker: #020306;
+    --bg-surface: rgba(14, 20, 37, 0.4);
+    --bg-surface-hover: rgba(25, 35, 60, 0.6);
+    
+    /* Neon Accents da Logo (Ciano, Azul e Roxo) */
+    --primary-cyan: #00F0FF;     /* Ciano Brilhante (Conectividade) */
+    --primary-blue: #2962FF;     /* Azul Intenso Metálico */
+    --primary-purple: #D500F9;   /* Roxo/Magenta Neon */
+    
+    /* Gradients */
+    --logo-gradient: linear-gradient(135deg, var(--primary-cyan) 0%, var(--primary-blue) 50%, var(--primary-purple) 100%);
+    --card-gradient: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+    
+    /* Text Colors */
+    --text-main: #FFFFFF;
+    --text-muted: #9BA9C2;
+    
+    /* Borders & Glow */
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --border-glass-hover: rgba(255, 255, 255, 0.15);
+    --glow-cyan: 0 0 24px rgba(0, 240, 255, 0.3);
+    --glow-purple: 0 0 24px rgba(213, 0, 249, 0.3);
+
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacings */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+    --space-xxl: 10rem;
+    
+    /* Structure */
+    --container-max-width: 1200px;
+    --header-height: 80px;
+
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-bounce: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
