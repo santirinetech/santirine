@@ -1,192 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santirine Tech | Inovação Digital</title>
-    <meta name="description" content="Santirine Tech: Construindo o futuro com tecnologia de ponta, design inovador e soluções sob medida.">
-    <!-- Google Fonts: Outfit para Títulos (Tech/Futurista), Inter para Leitura -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- CSS Modulares -->
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santirine Tech</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Cursor Customizado -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+<canvas id="canvas-bg"></canvas>
 
-    <!-- Navegação -->
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">
-                <div class="logo-mark">S</div>
-                <div class="logo-text">SANTIRINE <span>TECH</span></div>
-            </a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#hero" class="nav-link active">Início</a></li>
-                    <li><a href="#services" class="nav-link">Soluções</a></li>
-                    <li><a href="#about" class="nav-link">Diferencial</a></li>
-                    <li><a href="#contact" class="nav-link btn-header">Fale Conosco</a></li>
-                </ul>
-                <button class="mobile-menu-btn" aria-label="Abrir Menu">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </button>
-            </nav>
+<nav>
+  <div class="nav-logo">SANTIRINE</div>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#portfolio">Portfólio</a></li>
+    <li><a href="#automacao">Automação</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="https://wa.me/5527988573982?text=Olá!%20Vim%20pelo%20site%20da%20Santirine%20Tech%20e%20gostaria%20de%20um%20orçamento." class="nav-cta" target="_blank">Orçamento</a>
+</nav>
+
+<section id="hero">
+  <div class="glow" style="width:700px;height:700px;background:rgba(162,89,255,.1);top:-150px;right:-200px;"></div>
+  <div class="glow" style="width:400px;height:400px;background:rgba(0,195,255,.07);bottom:0;left:-100px;"></div>
+
+  <div class="hero-badge"><span class="badge-dot"></span>Automação · Web · IA · n8n · Evolution</div>
+
+  <h1 class="hero-title">
+    <span class="line1">SANTIRINE</span>
+    <span class="line2">TECH</span>
+  </h1>
+
+  <p class="hero-tagline">Criamos sistemas, sites e automações inteligentes que trabalham por você 24h por dia. Do fluxo n8n ao app completo — entregamos tecnologia de impacto.</p>
+
+  <div class="hero-tags">
+    <span class="tag">n8n</span>
+    <span class="tag">Evolution API</span>
+    <span class="tag">WhatsApp Bot</span>
+    <span class="tag">Desenvolvimento Web</span>
+    <span class="tag">IA Integrada</span>
+  </div>
+
+  <div class="hero-btns">
+    <a href="https://wa.me/5527988573982?text=Olá!%20Quero%20iniciar%20um%20projeto%20com%20a%20Santirine%20Tech." class="btn-p" target="_blank">💬 Iniciar projeto</a>
+    <a href="#portfolio" class="btn-g">Ver portfólio</a>
+  </div>
+
+  <div class="scroll-hint"><div class="scroll-line"></div><span>scroll</span></div>
+</section>
+
+<div class="div"></div>
+
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div><div class="sn" data-t="20">0</div><div class="sl">Projetos entregues</div></div>
+      <div><div class="sn" data-t="100">0</div><div class="sl">% dedicação</div></div>
+      <div><div class="sn" data-t="24">0</div><div class="sl">h de suporte</div></div>
+      <div><div class="sn" data-t="10">0</div><div class="sl">Tecnologias integradas</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<section id="servicos">
+  <div class="container">
+    <div class="slabel">// o que entregamos</div>
+    <h2 class="stitle">Soluções digitais <span>sob medida</span></h2>
+    <p class="sdesc">Cada projeto é construído do zero, com foco em resultado real para o seu negócio.</p>
+    <div class="services-grid" style="margin-top:3rem;">
+      <div class="scard">
+        <div class="sicon ib">⚡</div>
+        <h3>Automação com n8n</h3>
+        <p>Fluxos inteligentes que automatizam tarefas repetitivas, integram sistemas e escalam seu negócio sem contratar mais pessoas.</p>
+        <div class="tech-pill"><span class="pill">n8n</span><span class="pill">Webhook</span><span class="pill">API</span></div>
+      </div>
+      <div class="scard">
+        <div class="sicon ip">🤖</div>
+        <h3>Bots WhatsApp</h3>
+        <p>Atendimento automatizado 24h via WhatsApp com Evolution API — desde respostas simples até fluxos com IA integrada.</p>
+        <div class="tech-pill"><span class="pill">Evolution API</span><span class="pill">WhatsApp</span><span class="pill">IA</span></div>
+      </div>
+      <div class="scard">
+        <div class="sicon ic">🌐</div>
+        <h3>Desenvolvimento Web</h3>
+        <p>Sites, landing pages, e-commerces e sistemas web com design único, alta performance e experiência que converte.</p>
+        <div class="tech-pill"><span class="pill">React</span><span class="pill">Next.js</span><span class="pill">Node</span></div>
+      </div>
+      <div class="scard">
+        <div class="sicon ig">🔗</div>
+        <h3>Integrações & APIs</h3>
+        <p>Conectamos qualquer sistema ao outro — CRMs, ERPs, plataformas de pagamento, IA e muito mais via API.</p>
+        <div class="tech-pill"><span class="pill">REST API</span><span class="pill">Webhooks</span><span class="pill">Claude AI</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<section id="portfolio">
+  <div class="container">
+    <div class="slabel">// projetos reais</div>
+    <h2 class="stitle">Portfólio <span>Santirine</span></h2>
+    <p class="sdesc">Sites e sistemas desenvolvidos para clientes reais, com design autoral e resultado comprovado.</p>
+    <div class="portfolio-grid">
+
+      <div class="pcard" onclick="window.open('https://lafran.vercel.app','_blank')">
+        <div class="pcard-img lafran-bg">
+          <span style="font-weight:900;font-size:2rem;letter-spacing:4px;color:#fff;font-family:serif;">LAFRAN</span>
+          <span class="site-url">lafran.vercel.app</span>
         </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="hero-bg">
-                <div class="gradient-sphere sphere-1"></div>
-                <div class="gradient-sphere sphere-2"></div>
-                <div class="noise-overlay"></div>
-            </div>
-            <div class="container hero-content">
-                <div class="badge fade-up">Bem-vindo ao futuro digital</div>
-                <h1 class="hero-title fade-up" style="--delay: 0.1s">
-                    Inovação sem <span class="text-gradient">limites.</span><br>
-                    Engenharia de precisão.
-                </h1>
-                <p class="hero-subtitle fade-up" style="--delay: 0.2s">
-                    Não usamos templates. Nós forjamos experiências digitais únicas que colocam sua marca à frente do tempo, combinando estética extrema e performance absoluta.
-                </p>
-                <div class="hero-actions fade-up" style="--delay: 0.3s">
-                    <a href="#services" class="btn-primary" data-text="Explorar Soluções">
-                        <span>Explorar Soluções</span>
-                    </a>
-                    <a href="#contact" class="btn-secondary">
-                        Iniciar Projeto <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services">
-            <div class="container">
-                <div class="section-header fade-up">
-                    <h2 class="section-title">Nossas <span class="text-gradient">Soluções</span></h2>
-                    <p class="section-description">Como a Santirine Tech pode impulsionar seu negócio hoje.</p>
-                </div>
-                
-                <div class="services-grid">
-                    <div class="service-card fade-up">
-                        <div class="card-glow"></div>
-                        <div class="service-icon"><ion-icon name="code-slash-outline"></ion-icon></div>
-                        <h3>Desenvolvimento Web</h3>
-                        <p>Aplicações velozes, seguras e com design exclusivo. Esqueça o formato padrão e genérico da internet moderna.</p>
-                    </div>
-                    
-                    <div class="service-card fade-up" style="--delay: 0.1s">
-                        <div class="card-glow"></div>
-                        <div class="service-icon"><ion-icon name="phone-portrait-outline"></ion-icon></div>
-                        <h3>Apps Mobile</h3>
-                        <p>Sistemas fluidos e interativos para colocar sua empresa diariamente no bolso de milhões de usuários.</p>
-                    </div>
-                    
-                    <div class="service-card fade-up" style="--delay: 0.2s">
-                        <div class="card-glow"></div>
-                        <div class="service-icon"><ion-icon name="hardware-chip-outline"></ion-icon></div>
-                        <h3>Mentes Artificiais</h3>
-                        <p>Automações inteligentes e integrações avançadas com Inteligência Artificial para otimizar processos em 10x.</p>
-                    </div>
-                    
-                    <div class="service-card fade-up" style="--delay: 0.3s">
-                        <div class="card-glow"></div>
-                        <div class="service-icon"><ion-icon name="color-palette-outline"></ion-icon></div>
-                        <h3>UI/UX Premium</h3>
-                        <p>Interfaces disruptivas que não apenas funcionam, mas geram o efeito "UAU" imediato no primeiro clique.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About/Differential Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-content">
-                    <h2 class="reveal-text fade-up">
-                        A <span class="text-gradient">Santirine</span> não entrega apenas código. <br>Entregamos a assinatura digital do seu sucesso com alto nível técnico.
-                    </h2>
-                    <div class="about-stats mt-4">
-                        <div class="stat-item fade-up">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Código Customizado</span>
-                        </div>
-                        <div class="stat-item fade-up" style="--delay: 0.1s">
-                            <span class="stat-number">UI</span>
-                            <span class="stat-label">Design Interativo</span>
-                        </div>
-                        <div class="stat-item fade-up" style="--delay: 0.2s">
-                            <span class="stat-number">∞</span>
-                            <span class="stat-label">Inovação Contínua</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container contact-wrapper">
-                <div class="contact-info fade-up">
-                    <h2 class="section-title">Pronto para <br><span class="text-gradient">Inovar?</span></h2>
-                    <p>Mande uma mensagem e vamos transformar sua visão na mais alta realidade estrutural e visual da web.</p>
-                    <div class="contact-details mt-4">
-                        <a href="mailto:hello@santirinetech.com" class="contact-link">
-                            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-                            hello@santirinetech.com
-                        </a>
-                    </div>
-                </div>
-                
-                <form class="contact-form fade-up" style="--delay: 0.2s">
-                    <div class="input-group">
-                        <input type="text" id="name" required placeholder=" ">
-                        <label for="name">Seu Nome / Empresa</label>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" id="email" required placeholder=" ">
-                        <label for="email">E-mail Corporativo</label>
-                    </div>
-                    <div class="input-group">
-                        <textarea id="message" required placeholder=" " rows="4"></textarea>
-                        <label for="message">Fale sobre seu projeto ambicioso...</label>
-                    </div>
-                    <button type="button" class="btn-primary w-100 btn-submit">
-                        <span>Lançar Projeto</span>
-                    </button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <div class="logo-text small">SANTIRINE <span>TECH</span></div>
-                <p>&copy; 2026 Santirine Tech. Todos os direitos reservados. Feito para o amanhã.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
-                </div>
-            </div>
+        <div class="pcard-body">
+          <div class="pcard-tag">E-commerce · Streetwear</div>
+          <h3>Lafran Studios</h3>
+          <p>Loja virtual completa com carrinho, checkout PIX/cartão, catálogo de coleções e identidade visual premium para marca de streetwear.</p>
+          <div class="pcard-footer">
+            <a href="https://lafran.vercel.app" target="_blank" class="pcard-link">Ver projeto →</a>
+            <div class="pcard-techs"><span class="pill">E-commerce</span><span class="pill">PIX</span></div>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+      <div class="pcard" onclick="window.open('https://utralink.vercel.app','_blank')">
+        <div class="pcard-img ultra-bg">
+          <span style="font-weight:800;font-size:1.6rem;letter-spacing:2px;color:#00c3ff;">Ultralink</span>
+          <span class="site-url">utralink.vercel.app</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tag">Provedor · Fibra Óptica</div>
+          <h3>Ultralink Telecom</h3>
+          <p>Landing page de ISP com apresentação de planos (100/300/600 Mbps), integração direta com WhatsApp e área do cliente.</p>
+          <div class="pcard-footer">
+            <a href="https://utralink.vercel.app" target="_blank" class="pcard-link">Ver projeto →</a>
+            <div class="pcard-techs"><span class="pill">Landing</span><span class="pill">WA</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard" onclick="window.open('https://don-big.vercel.app','_blank')">
+        <div class="pcard-img don-bg">
+          <span style="font-weight:900;font-size:1.8rem;letter-spacing:3px;color:#ff9500;">DON BIG</span>
+          <span class="site-url">don-big.vercel.app</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tag">Catálogo · Premium</div>
+          <h3>Don Big</h3>
+          <p>Catálogo digital premium com carrinho, listagem de produtos exclusivos e experiência de compra elevada para marca de acessórios.</p>
+          <div class="pcard-footer">
+            <a href="https://don-big.vercel.app" target="_blank" class="pcard-link">Ver projeto →</a>
+            <div class="pcard-techs"><span class="pill">Catálogo</span><span class="pill">Premium</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<section id="automacao">
+  <div class="container">
+    <div class="slabel">// como funciona</div>
+    <h2 class="stitle">Automação que <span>trabalha 24h</span></h2>
+    <p class="sdesc">Criamos fluxos n8n + Evolution API que atendem clientes, qualificam leads e executam tarefas automaticamente.</p>
+
+    <div class="flow-visual">
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="ficon f1">📩</div>
+          <div class="fstep-label">Cliente envia mensagem</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="ficon f2">⚡</div>
+          <div class="fstep-label">n8n captura o gatilho</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="ficon f3">🤖</div>
+          <div class="fstep-label">IA processa e responde</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="ficon f4">✅</div>
+          <div class="fstep-label">WhatsApp entrega resposta</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auto-cards">
+      <div class="acard">
+        <h4>🤖 Atendimento automático</h4>
+        <p>Responde clientes no WhatsApp 24h com IA — agenda, tira dúvidas e qualifica leads sem intervenção humana.</p>
+      </div>
+      <div class="acard">
+        <h4>🔄 Integração de sistemas</h4>
+        <p>Conectamos seu CRM, planilhas, e-commerce e qualquer sistema via API usando fluxos n8n robustos.</p>
+      </div>
+      <div class="acard">
+        <h4>📊 Relatórios automáticos</h4>
+        <p>Envio automático de relatórios e notificações para WhatsApp ou e-mail baseados em eventos do seu sistema.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<section id="contato">
+  <div class="container">
+    <div class="contato-grid">
+      <div>
+        <div class="slabel">// vamos conversar</div>
+        <h2 class="stitle">Pronto para <span>automatizar?</span></h2>
+        <p class="sdesc" style="margin-bottom:2rem;">Conte sobre seu projeto. Respondemos rapidamente pelo WhatsApp.</p>
+        <div class="cinfo">
+          <div class="citem">
+            <div class="cicon">💬</div>
+            <div><h4>WhatsApp</h4><a href="https://wa.me/5527988573982" target="_blank">(27) 98857-3982</a></div>
+          </div>
+          <div class="citem">
+            <div class="cicon">🌐</div>
+            <div><h4>Website</h4><a href="https://santirine.com.br" target="_blank">santirine.com.br</a></div>
+          </div>
+          <div class="citem">
+            <div class="cicon">📧</div>
+            <div><h4>Email</h4><p>contato@santirine.com.br</p></div>
+          </div>
+          <div class="citem">
+            <div class="cicon">📍</div>
+            <div><h4>Localização</h4><p>Espírito Santo, Brasil</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="cform">
+        <div class="fg"><label>Nome</label><input type="text" placeholder="Seu nome completo" id="f-nome"></div>
+        <div class="fg"><label>WhatsApp</label><input type="text" placeholder="(27) 9 0000-0000" id="f-tel"></div>
+        <div class="fg"><label>Serviço de interesse</label><input type="text" placeholder="Ex: Bot WhatsApp, Site, Automação..." id="f-serv"></div>
+        <div class="fg"><label>Mensagem</label><textarea placeholder="Descreva brevemente seu projeto..." id="f-msg"></textarea></div>
+        <button class="fsub" onclick="sendWA()">Enviar pelo WhatsApp →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fl">SANTIRINE TECH</div>
+  <div class="fc">© 2026 Santirine Tech · Espírito Santo, Brasil</div>
+  <div class="flinks">
+    <a href="https://santirine.com.br">santirine.com.br</a>
+    <a href="https://wa.me/5527988573982" target="_blank">WhatsApp</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/5527988573982?text=Olá!%20Vim%20pelo%20site%20da%20Santirine%20Tech%20e%20gostaria%20de%20um%20orçamento." target="_blank" class="wa-btn" title="Fale conosco no WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
 </body>
 </html>
